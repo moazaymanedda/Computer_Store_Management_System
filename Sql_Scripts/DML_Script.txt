@@ -1,0 +1,85 @@
+-- 1. Insert za tabelu Artikal
+INSERT INTO Artikal (id_artikla, cena, naziv_artikla, tip_artikla, kol_na_st)
+VALUES (1, 50000.00, 'Gaming PC', 'Desktop_racunar', 10);
+
+INSERT INTO Artikal (id_artikla, cena, naziv_artikla, tip_artikla, kol_na_st)
+VALUES (2, 15000.00, 'RAM 16GB DDR4', 'Komponenta', 50);
+
+INSERT INTO Artikal (id_artikla, cena, naziv_artikla, tip_artikla, kol_na_st)
+VALUES (3, 3000.00, 'Gaming Miš', 'Periferija', 100);
+
+INSERT INTO Artikal (id_artikla, cena, naziv_artikla, tip_artikla, kol_na_st)
+VALUES (4, 75000.00, 'Poslovni PC', 'Desktop_racunar', 5);
+
+INSERT INTO Artikal (id_artikla, cena, naziv_artikla, tip_artikla, kol_na_st)
+VALUES (5, 10000.00, 'SSD 1TB', 'Komponenta', 30);
+
+INSERT INTO Artikal (id_artikla, cena, naziv_artikla, tip_artikla, kol_na_st)
+VALUES (6, 2500.00, 'Mehanička tastatura', 'Periferija', 75);
+
+-- 2. Insert za tabelu Kupac
+INSERT INTO Kupac (id_kupca, ime_kupca, prezime_kupca)
+VALUES (1, 'Marko', 'Markovic');
+
+INSERT INTO Kupac (id_kupca, ime_kupca, prezime_kupca)
+VALUES (2, 'Jovana', 'Jovanović');
+
+INSERT INTO Kupac (id_kupca, ime_kupca, prezime_kupca)
+VALUES (3, 'Petar', 'Petrović');
+
+INSERT INTO Kupac (id_kupca, ime_kupca, prezime_kupca)
+VALUES (4, 'Ana', 'Anić');
+
+-- 3. Insert za tabelu Utisak
+INSERT INTO Utisak (id_utiska, ocena, komentar, datum_utiska, id_kupca) 
+VALUES (1, 4.5, 'Odličan proizvod, ispunio sva očekivanja.', TO_DATE('2025-01-10', 'YYYY-MM-DD'), 1);
+
+INSERT INTO Utisak (id_utiska, ocena, komentar, datum_utiska, id_kupca) 
+VALUES (2, 3.0, 'Prosečan proizvod, može biti bolje.', TO_DATE('2025-01-12', 'YYYY-MM-DD'), 2);
+
+INSERT INTO Utisak (id_utiska, ocena, komentar, datum_utiska, id_kupca) 
+VALUES (3, 5.0, 'Perfektan računar, radi savršeno.', TO_DATE('2025-01-14', 'YYYY-MM-DD'), 3);
+
+-- 4. Insert za tabelu Korpa
+INSERT INTO Korpa (id_korpe, datum_kreiranja, status_korpe, id_kupca)
+VALUES (1, TO_DATE('2025-01-15', 'YYYY-MM-DD'), 'Zatvorena', 1);
+
+INSERT INTO Korpa (id_korpe, datum_kreiranja, status_korpe, id_kupca)
+VALUES (2, TO_DATE('2025-01-10', 'YYYY-MM-DD'), 'Zatvorena', 2);
+
+INSERT INTO Korpa (id_korpe, datum_kreiranja, status_korpe, id_kupca)
+VALUES (3, TO_DATE('2025-01-17', 'YYYY-MM-DD'), 'Zatvorena', 3);
+
+INSERT INTO Korpa (id_korpe, datum_kreiranja, status_korpe, id_kupca)
+VALUES (4, TO_DATE('2025-01-20', 'YYYY-MM-DD'), 'Aktivna', 4);
+
+-- 5. Insert za tabelu sadrži
+INSERT INTO sadrži (id_artikla, id_korpe, id_kupca)
+VALUES (1, 1, 1);
+
+INSERT INTO sadrži (id_artikla, id_korpe, id_kupca)
+VALUES (2, 1, 1);
+
+INSERT INTO sadrži (id_artikla, id_korpe, id_kupca)
+VALUES (3, 2, 2);
+
+INSERT INTO sadrži (id_artikla, id_korpe, id_kupca)
+VALUES (4, 3, 3);
+
+INSERT INTO sadrži (id_artikla, id_korpe, id_kupca)
+VALUES (5, 3, 3);
+
+INSERT INTO sadrži (id_artikla, id_korpe, id_kupca)
+VALUES (6, 4, 4);
+
+-- 6. Insert za tabelu Racun
+INSERT INTO Racun (id_racuna, datum_izdavanja, ukupan_iznos, nacin_placanja, id_korpe, id_kupca)
+VALUES (1, TO_DATE('2025-01-15', 'YYYY-MM-DD'), 65000.00, 'Kartica', 1, 1);
+
+INSERT INTO Racun (id_racuna, datum_izdavanja, ukupan_iznos, nacin_placanja, id_korpe, id_kupca)
+VALUES (2, TO_DATE('2025-01-10', 'YYYY-MM-DD'), 3000.00, 'Gotovina', 2, 2);
+
+INSERT INTO Racun (id_racuna, datum_izdavanja, ukupan_iznos, nacin_placanja, id_korpe, id_kupca)
+VALUES (3, TO_DATE('2025-01-17', 'YYYY-MM-DD'), 85000.00, 'Kartica', 3, 3);
+
+COMMIT;

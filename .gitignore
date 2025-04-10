@@ -1,0 +1,39 @@
+# Java compiled class files
+*.class
+
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# Output / build folder
+bin/
+
+# Oracle SQL Developer Data Modeler files
+*.dmd
+*.bak
+*.log
+*.tmp
+Database relational model/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp files
+*.log
+*.tmp
+
+# IDE-specific folders (optional, if you use IntelliJ, NetBeans, etc.)
+.idea/
+*.iml
+nbproject/
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# Ignore external libraries
+*.jar
