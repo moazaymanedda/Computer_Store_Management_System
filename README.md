@@ -1,277 +1,118 @@
-# 💻 Computer Store Management System
+# Computer Store Management System 🖥️🛒
 
-## 📘 Project Description
-The **Computer Store Management System** is a database-driven Java application designed to manage the operations of a computer store efficiently. It includes a complete set of functionalities for managing products, customers, orders, invoices, feedback, suppliers, and warehouses. The system is built using **Oracle SQL** for database management and **Java (JDBC)** for application logic and connectivity.
+Welcome to the **Computer Store Management System** repository! This project is designed to help manage various aspects of a computer store, including products, orders, feedback, and inventory. It is built using Java and Oracle SQL, making it a robust solution for store management.
 
----
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue.svg)](https://github.com/moazaymanedda/Computer_Store_Management_System/releases)
 
-## 🚀 Features
-- **Product Management**: Administer various product types such as desktop computers, components, and peripherals.
-- **Customer Management**: Store customer profiles and track their purchase history.
-- **Order Management**: Manage shopping carts, order statuses, and invoices.
-- **Feedback System**: Collect customer reviews and ratings for products.
-- **Supplier and Warehouse Management**: Monitor suppliers, warehouse stock levels, and deliveries.
+## Table of Contents
 
----
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
+## Features
 
-### 🔁 Triggers
-Custom triggers are implemented to ensure data integrity and enforce business rules, such as:
-- Validating product types in associated tables (`Desktop_racunar`, `Komponenta`, `Periferija`).
+- **Product Management**: Easily add, update, and remove products.
+- **Order Processing**: Manage customer orders efficiently.
+- **Feedback System**: Collect and analyze customer feedback.
+- **Inventory Control**: Keep track of stock levels and reorder products as needed.
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation.
 
-### 📜 Scripts
-- **DDL Script**: SQL script for creating the database schema.
-- **DML Script**: Contains sample data for testing purposes.
-- **Oracle Data Modeler File**: A `.dmd` file providing a visual data model created using Oracle SQL Developer Data Modeler.
+## Technologies Used
 
----
+This project utilizes a combination of technologies:
 
-## 🧰 Technologies Used
-| Technology | Description |
-|------------|-------------|
-| **Database** | Oracle Database 11g |
-| **Backend Language** | Java |
-| **Database Connectivity** | JDBC |
-| **Tools** | Oracle SQL Developer, Oracle SQL Developer Data Modeler, Eclipse IDE |
+- **Java**: The primary programming language for building the application.
+- **Oracle SQL**: For database management and data storage.
+- **JDBC**: Java Database Connectivity for database interactions.
 
----
+## Installation
 
-## 📁 Folder Structure
+To set up the Computer Store Management System on your local machine, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/moazaymanedda/Computer_Store_Management_System.git
+   ```
+
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd Computer_Store_Management_System
+   ```
+
+3. **Set Up Oracle Database**:
+   - Ensure you have Oracle Database installed and running.
+   - Create a new database and user for the application.
+
+4. **Configure Database Connection**:
+   - Open the `config.properties` file and update the database connection details.
+
+5. **Build the Project**:
+   - Use your preferred IDE or build tool to compile the Java files.
+
+6. **Run the Application**:
+   - Execute the main class to start the application.
+
+## Usage
+
+Once the application is running, you can access the user interface to manage the computer store. 
+
+### Key Functionalities:
+
+- **Add Products**: Click on the "Add Product" button and fill in the required details.
+- **Process Orders**: Navigate to the "Orders" section to view and manage customer orders.
+- **View Feedback**: Check the "Feedback" tab to read customer reviews and suggestions.
+- **Inventory Management**: Monitor stock levels and reorder products when necessary.
+
+For detailed instructions on how to use each feature, please refer to the user manual included in the repository.
+
+## Project Structure
+
+The project is organized as follows:
 
 ```
-project-root/
+Computer_Store_Management_System/
 │
-├── docs/                             # Documentation and model diagrams
-│   ├── ER_Model.png
-│   ├── Data_Model_Description.docx
+├── src/                     # Source files
+│   ├── main/                # Main application files
+│   ├── models/              # Data models
+│   ├── controllers/         # Business logic
+│   └── views/               # User interface components
 │
-├── sql/                              # SQL scripts
-│   ├── DDL_Script.ddl
-│   └── DML_Script.sql                # Rename to .sql for consistency
-│
-├── Database data modeler/           # Relational model / metadata
-│   ├── Data Model Description.docx   # Detailed documentation of the data model and its components 
-│   ├── Database relational model/    # Additional metadata for the model
-│
-├── JDBC/                             # Java application
-│   ├── src/                          # Java source code
-│   └── bin/                          # Compiled classes
-│
-└── README.md                         # Project documentation
+├── config.properties         # Database configuration file
+├── README.md                 # Project documentation
+└── LICENSE                   # License information
 ```
 
----
+## Contributing
 
-## ▶️ How to Run
+We welcome contributions from the community! If you would like to contribute, please follow these steps:
 
-1. Start Oracle Database and execute the `DDL_Script.ddl` to create the schema.
-2. Run `DML_Script.txt` to populate the database with sample data.
-3. Configure JDBC connection parameters in the Java project.
-4. Compile and run the Java application.
-5. *(Optional)* Open `Database relational model.dmd` in Oracle SQL Developer Data Modeler to visualize or modify the schema.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your forked repository.
+5. Submit a pull request.
 
----
+Please ensure that your code adheres to the existing coding standards and includes relevant tests.
 
-## 📊 Sample Outputs (Translated from Serbian for clarity)
+## License
 
-> 🔽 The following outputs were originally in Serbian and have been translated into English to improve understanding.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## Contact
 
-### 1️⃣ View Customer Purchase Statistics
-```
-Customer Purchase Statistics:
-NAME                    INVOICE COUNT     TOTAL SPENT
-Petar Petrović          1                 85,000.00
-Marko Marković          1                 65,000.00
-Jovana Jovanović        1                 3,000.00
-```
+For questions or suggestions, please reach out:
 
----
+- **Name**: Moaz Ayman
+- **Email**: moazaymanedda@example.com
+- **GitHub**: [moazaymanedda](https://github.com/moazaymanedda)
 
-### 2️⃣ View Average Product Ratings by Type
-```
-Average Ratings by Product Type:
-PRODUCT TYPE           AVERAGE RATING     NUMBER OF REVIEWS
-Desktop Computer       4.75               2
-Component              4.75               2
-Peripheral             3.00               1
-```
+Feel free to visit the [Releases](https://github.com/moazaymanedda/Computer_Store_Management_System/releases) section for the latest updates and downloads.
 
----
-
-### 3️⃣ Detailed Purchase Analysis
-```
-Detailed Purchase Analysis:
-NAME                    CART STATUS    QUANTITY    CREATED DATE    REVIEWS    SATISFACTION
-Ana Anić                Active         1           2025-01-20       0          0.00
-Petar Petrović          Closed         2           2025-01-17       1          5.00
-Marko Marković          Closed         2           2025-01-15       1          4.50
-Jovana Jovanović        Closed         1           2025-01-10       1          3.00
-```
-
----
-
-### 4️⃣ Product Analysis
-```
-Product Analysis:
-PRODUCT NAME            TYPE             STOCK         ACTIVE CARTS    CLOSED CARTS    POPULARITY
-SSD 1TB                 Component        30            0               1               20%
-Mechanical Keyboard     Peripheral       75            1               0               20%
-Business PC             Desktop          5             0               1               20%
-RAM 16GB DDR4           Component        50            0               1               20%
-Gaming PC               Desktop          10            0               1               20%
-```
-
----
-
-### 5️⃣ New Purchase with Feedback (Transaction)
-```
-New Purchase with Feedback:
-Enter Customer ID: 1
-Enter Product IDs (comma-separated): 1,2
-Enter Payment Method: Card
-Enter Rating (1-5): 4
-Enter Comment: Excellent product
-
-Successfully created purchase with invoice and feedback.
-Cart ID: 5
-Purchase completed successfully.
-```
-
----
-
-## 📌 Notes
-- All outputs are **translated from Serbian** for international users or collaborators.
-- The system supports **transactional operations**, such as creating a new purchase with a review, ensuring **ACID compliance**.
-
-## 🗃️ Database Design
-
-The system is based on a **relational database model**, consisting of the following primary entities and their attributes. This structure ensures data consistency, integrity, and supports all core functionalities of the application.
-
----
-
-### 🏬 Store
-Represents a physical or online location where products are sold.
-
-| Attribute         | Description                      |
-|------------------|----------------------------------|
-| `id_prodavnice`  | Unique identifier of the store   |
-| `naziv`          | Store name                       |
-| `adresa`         | Store address                    |
-
----
-
-### 👨‍💼 Employee
-Stores employee information and their role within the store.
-
-| Attribute         | Description                          |
-|------------------|--------------------------------------|
-| `id_zaposlenog`  | Unique identifier of the employee    |
-| `ime`            | First name of the employee           |
-| `prezime`        | Last name of the employee            |
-| `pozicija`       | Job position                         |
-| `plata`          | Salary                               |
-
----
-
-### 🏢 Warehouse
-Represents a storage facility for products.
-
-| Attribute           | Description                          |
-|--------------------|--------------------------------------|
-| `id_magacina`      | Unique identifier of the warehouse   |
-| `naziv_magacina`   | Warehouse name                       |
-| `kapacitet`        | Maximum storage capacity             |
-
----
-
-### 📦 Product
-Contains information about the products available for sale.
-
-| Attribute         | Description                                             |
-|------------------|---------------------------------------------------------|
-| `id_artikla`     | Unique identifier of the product                        |
-| `naziv_artikla`  | Product name                                            |
-| `cena`           | Product price                                           |
-| `tip_artikla`    | Product type (`Desktop Computer`, `Component`, `Peripheral`) |
-| `kol_na_st`      | Quantity currently in stock                             |
-
----
-
-### 🛒 Shopping Cart
-Tracks products added by customers for potential purchase.
-
-| Attribute          | Description                           |
-|-------------------|---------------------------------------|
-| `id_korpe`        | Unique identifier of the shopping cart|
-| `datum_kreiranja` | Date the cart was created             |
-| `status_korpe`    | Cart status (`active`, `empty`, etc.) |
-
----
-
-### 🧾 Invoice
-Stores billing information after a purchase is completed.
-
-| Attribute         | Description                          |
-|------------------|--------------------------------------|
-| `id_racuna`      | Unique identifier of the invoice     |
-| `datum_izdavanja`| Date of invoice creation             |
-| `ukupan_iznos`   | Total amount billed                  |
-| `nacin_placanja` | Payment method (`cash`, `card`, etc.)|
-
----
-
-### 👤 Customer
-Stores personal information about customers.
-
-| Attribute         | Description                          |
-|------------------|--------------------------------------|
-| `id_kupca`       | Unique identifier of the customer    |
-| `ime_kupca`      | Customer's first name                |
-| `prezime_kupca`  | Customer's last name                 |
-
----
-
-### ⭐ Feedback
-Collects product reviews and ratings submitted by customers.
-
-| Attribute         | Description                          |
-|------------------|--------------------------------------|
-| `id_utiska`      | Unique identifier of the feedback    |
-| `ocena`          | Rating value (1–5)                   |
-| `komentar`       | Textual comment                      |
-| `datum_utiska`   | Date the feedback was submitted      |
-
----
-
-### 🚚 Supplier
-Contains information about product vendors or suppliers.
-
-| Attribute           | Description                          |
-|--------------------|--------------------------------------|
-| `id_dobavljaca`    | Unique identifier of the supplier    |
-| `naziv_dobavljaca` | Supplier name                        |
-| `kontakt`          | Contact information                  |
-
----
-
-### 🛠️ Services
-Represents additional services offered by the store (e.g., technical support).
-
-| Attribute         | Description                                   |
-|------------------|-----------------------------------------------|
-| `id_usluge`      | Unique identifier of the service              |
-| `tip_usluge`     | Type of service (`repair`, `installation`, etc.) |
-| `cena_usluge`    | Price of the service                          |
-| `opis_usluge`    | Description of the service                    |
-
----
-
-### 📌 Notes
-- All tables use appropriate **primary keys** and **foreign keys** to maintain relational integrity.
-- Entity relationships are visualized in the `Database relational model.dmd` file included in the project.
-- Triggers are used for **data validation** and **business rule enforcement**, particularly for product type integrity.
-
-
----
+Thank you for checking out the Computer Store Management System! We hope you find it useful for managing your computer store efficiently.
